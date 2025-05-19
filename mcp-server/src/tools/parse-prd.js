@@ -26,7 +26,7 @@ export function registerParsePRDTool(server) {
 				.string()
 				.optional()
 				.default('scripts/prd.txt')
-				.describe('Absolute path to the PRD document file (.txt, .md, etc.)'),
+				.describe('Relative path to the PRD document file (.txt, .md, etc.)'),
 			numTasks: z
 				.string()
 				.optional()
@@ -51,7 +51,7 @@ export function registerParsePRDTool(server) {
 				.describe('Append generated tasks to existing file.'),
 			projectRoot: z
 				.string()
-				.describe('The directory of the project. Must be an absolute path.')
+				.describe('The directory of the project. Must be an relative path.')
 		}),
 		execute: withNormalizedProjectRoot(async (args, { log, session }) => {
 			const toolName = 'parse_prd';
