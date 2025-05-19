@@ -23,14 +23,14 @@ export function registerGenerateTool(server) {
 		description:
 			'Generates individual task files in tasks/ directory based on tasks.json',
 		parameters: z.object({
-			file: z.string().optional().describe('Absolute path to the tasks file'),
+			file: z.string().optional().describe('Relative path to the tasks file'),
 			output: z
 				.string()
 				.optional()
 				.describe('Output directory (default: same directory as tasks file)'),
 			projectRoot: z
 				.string()
-				.describe('The directory of the project. Must be an absolute path.')
+				.describe('The directory of the project. Can be a relative path.')
 		}),
 		execute: withNormalizedProjectRoot(async (args, { log, session }) => {
 			try {
