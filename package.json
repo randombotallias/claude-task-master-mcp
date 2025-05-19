@@ -1,5 +1,5 @@
 {
-	"name": "task-master-ai",
+	"name": "task-master-ai-mcp",
 	"version": "0.13.2-rc.1",
 	"description": "A task management system for ambitious AI-driven development that doesn't overwhelm and confuse Cursor.",
 	"main": "index.js",
