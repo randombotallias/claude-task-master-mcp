@@ -34,7 +34,7 @@ export function registerInitializeProjectTool(server) {
 			projectRoot: z
 				.string()
 				.describe(
-					'The root directory for the project. ALWAYS SET THIS TO THE PROJECT ROOT DIRECTORY. IF NOT SET, THE TOOL WILL NOT WORK.'
+					'The root directory for the project. Must be relative path. ALWAYS SET THIS TO THE PROJECT ROOT DIRECTORY. IF NOT SET, THE TOOL WILL NOT WORK.'
 				)
 		}),
 		execute: withNormalizedProjectRoot(async (args, context) => {
