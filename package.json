@@ -75,7 +75,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/eyaltoledano/claude-task-master.git"
+		"url": "git+https://github.com/randombotallias/claude-task-master-mcp.git"
 	},
 	"homepage": "https://github.com/eyaltoledano/claude-task-master#readme",
 	"bugs": {
